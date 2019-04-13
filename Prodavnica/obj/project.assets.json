@@ -12538,11 +12538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Boris and Tijanaaa\\Desktop\\Prodavnica\\Prodavnica\\Prodavnica.csproj",
+      "projectUniqueName": "C:\\Users\\Boris and Tijanaaa\\Desktop\\Prodavnica\\Prodavnica2\\Prodavnica\\Prodavnica.csproj",
       "projectName": "Prodavnica",
-      "projectPath": "C:\\Users\\Boris and Tijanaaa\\Desktop\\Prodavnica\\Prodavnica\\Prodavnica.csproj",
+      "projectPath": "C:\\Users\\Boris and Tijanaaa\\Desktop\\Prodavnica\\Prodavnica2\\Prodavnica\\Prodavnica.csproj",
       "packagesPath": "C:\\Users\\Boris and Tijanaaa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Boris and Tijanaaa\\Desktop\\Prodavnica\\Prodavnica\\obj\\",
+      "outputPath": "C:\\Users\\Boris and Tijanaaa\\Desktop\\Prodavnica\\Prodavnica2\\Prodavnica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
