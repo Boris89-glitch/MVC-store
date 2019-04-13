@@ -1,0 +1,30 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          asp-href-exclude="**/*-reboot*,**/*-grid*" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Prodavnica</title>
+</head>
+<body>
+    <div class="navbar navbar-inverse bg-inverse" role="navigation">
+        <div class="row">
+            <a class="col navbar-brand" href="#">Prodavnica</a>
+            <div class="col-4 text-right">
+                @await Component.InvokeAsync("CartSummary") <!--wtf? />-->
+            </div>
+        </div>
+    </div>
+    <div class="row m-1 p-1">
+        <div id="categories" class="col-3">
+            @await Component.InvokeAsync("NavigationMenu")
+        </div>
+        <div class="col-9">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
