@@ -16,10 +16,17 @@ namespace Prodavnica.Models
                 new Product
                 {
                     Name = "Kayak",
-                    Description = "Neki random description za proizvod, very nice!",
+                    Description = "Neki random description za proizvod, very nice!11",
                     Category = "Watersports",
                     Price = 275
                 },
+                  new Product
+                  {
+                      Name = "Skije Elan FAS 935",
+                      Description = "Stare skije",
+                      Category = "ski",
+                      Price = 125
+                  },
                 new Product
                 {
                     Name = "Lifejacket",

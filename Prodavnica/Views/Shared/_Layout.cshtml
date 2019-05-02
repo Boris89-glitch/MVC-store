@@ -4,21 +4,22 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    <link rel="stylesheet" href="~/bootstrap/pulse.bootstrap.min.css"
           asp-href-exclude="**/*-reboot*,**/*-grid*" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>Prodavnica</title>
 </head>
 <body>
-    <div class="navbar navbar-inverse bg-inverse" role="navigation">
-        <div class="row">
-            <a class="col navbar-brand" href="#">Prodavnica</a>
-            <div class="col-4 text-right">
+        <div class="row m-1 p-2">
+            <div class="col-3">
+                <h1>Prodavnica</h1>
+            </div>
+            <div class="col-7">&nbsp;</div>
+            <div class="col-2 text-right">
                 @await Component.InvokeAsync("CartSummary") <!--wtf? />-->
             </div>
         </div>
-    </div>
-    <div class="row m-1 p-1">
+    <div class="row m-1 p-2">
         <div id="categories" class="col-3">
             @await Component.InvokeAsync("NavigationMenu")
         </div>
