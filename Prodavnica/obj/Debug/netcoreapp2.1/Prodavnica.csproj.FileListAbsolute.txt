@@ -130,3 +130,39 @@ C:\Users\Boris and Tijanaaa\Desktop\Prodavnica\Prodavnica2\Prodavnica\obj\Debug\
 C:\Users\Boris and Tijanaaa\Desktop\Prodavnica\Prodavnica2\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Order\List.g.cshtml.cs
 C:\Users\Boris and Tijanaaa\Desktop\Prodavnica\Prodavnica2\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
 C:\Users\Boris and Tijanaaa\Desktop\Prodavnica\Prodavnica2\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Edit.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\bin\Debug\netcoreapp2.1\Prodavnica.deps.json
+H:\JelenaProdavnica\Prodavnica\bin\Debug\netcoreapp2.1\Prodavnica.runtimeconfig.json
+H:\JelenaProdavnica\Prodavnica\bin\Debug\netcoreapp2.1\Prodavnica.runtimeconfig.dev.json
+H:\JelenaProdavnica\Prodavnica\bin\Debug\netcoreapp2.1\Prodavnica.dll
+H:\JelenaProdavnica\Prodavnica\bin\Debug\netcoreapp2.1\Prodavnica.pdb
+H:\JelenaProdavnica\Prodavnica\bin\Debug\netcoreapp2.1\Prodavnica.Views.dll
+H:\JelenaProdavnica\Prodavnica\bin\Debug\netcoreapp2.1\Prodavnica.Views.pdb
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.csprojAssemblyReference.cache
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.csproj.CoreCompileInputs.cache
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.RazorAssemblyInfo.cache
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.RazorAssemblyInfo.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.AssemblyInfoInputs.cache
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.AssemblyInfo.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.TagHelpers.input.cache
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.TagHelpers.output.cache
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.RazorCoreGenerate.cache
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Edit.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Order\Checkout.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Order\Completed.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Order\List.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Product\List.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\CartSummary\Default.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\NavigationMenu\Default.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ProductSummary.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_AdminLayout.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.RazorTargetAssemblyInfo.cache
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.RazorTargetAssemblyInfo.cs
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.Views.pdb
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.dll
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.pdb
+H:\JelenaProdavnica\Prodavnica\obj\Debug\netcoreapp2.1\Prodavnica.csproj.CopyComplete
