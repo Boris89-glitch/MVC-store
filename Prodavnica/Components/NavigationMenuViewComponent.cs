@@ -5,18 +5,15 @@ namespace Prodavnica.Components
 {
     public class NavigationMenuViewComponent : ViewComponent
     {
-        private IBaza repository;
+        private IBaza baza;
         public NavigationMenuViewComponent(IBaza repo)
         {
-            repository = repo;
+            baza = repo;
         }
         public IViewComponentResult Invoke()
         {
             ViewBag.SelectedCategory = RouteData?.Values["category"];
-            return View(repository.Products
-            .Select(x => x.Category)
-            .Distinct()
-            .OrderBy(x => x));
+            return View(baza.Products.Select(x => x.Category).Distinct().OrderBy(x => x));
         }
     }
 }

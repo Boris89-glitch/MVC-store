@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Prodavnica.Models
 {
-    public class EFOrders : IOrders
+    public class EFOrderRepo : IOrderRepo
     {
-        private EFContext context;
-        public EFOrders(EFContext ctx)
+        private EFContext context;       //DI
+        public EFOrderRepo(EFContext ctx)
         {
             context = ctx;
         }
-        public IQueryable<Order> Orders => context.Orders.Include(o => o.Lines).ThenInclude(l => l.Product);
+        public IQueryable<Order> Orders => context.Orders.Include(o => o.Lines).ThenInclude(l => l.Product); //ef workaround
 
         public void SaveOrder(Order order)
         {
@@ -22,7 +22,7 @@ namespace Prodavnica.Models
             {
                 context.Orders.Add(order);
             }
-           // context.SaveChanges();
+            context.SaveChanges();
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Prodavnica.Models
 {
-    public interface IOrders
+    public interface IOrderRepo
     {
         IQueryable<Order> Orders { get; }
         void SaveOrder(Order order);

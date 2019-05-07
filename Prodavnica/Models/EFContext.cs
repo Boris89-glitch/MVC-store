@@ -9,7 +9,7 @@ namespace Prodavnica.Models
         {
 
         }
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; }  //za bazu
         public DbSet<Order> Orders { get; set; }
     }
 }

@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Prodavnica.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace Prodavnica
 {
@@ -19,11 +20,11 @@ namespace Prodavnica
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<EFContext>(options => options.UseSqlServer(Configuration["Data:SportStoreProducts:ConnectionString"]));
+            services.AddDbContext<EFContext>(options => options.UseSqlServer(Configuration["Data:ProdavnicaProducts:ConnectionString"]));
             services.AddTransient<IBaza, EFBaza>();
             services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddTransient<IOrders, EFOrders>();
+            services.AddTransient<IOrderRepo, EFOrderRepo>();
             services.AddMvc();
             services.AddMemoryCache();
             services.AddSession();
@@ -37,6 +38,7 @@ namespace Prodavnica
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();
+           // app.UseAuthentication();
             app.UseMvc(routes => {
                 routes.MapRoute(
                 name: null,
@@ -63,7 +65,7 @@ namespace Prodavnica
                 );
                 routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
-            EFData.Popuni(app);
+            EFData.Populate(app);
         }
     }
 }
