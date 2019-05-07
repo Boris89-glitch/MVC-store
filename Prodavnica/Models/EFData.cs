@@ -27,6 +27,13 @@ namespace Prodavnica.Models
                       Category = "ski",
                       Price = 125
                   },
+                  new Product
+                  {
+                      Name = "Handball ball",
+                      Description = "Lopta za rukomet",
+                      Category = "hanball",
+                      Price = 125
+                  },
                 new Product
                 {
                     Name = "Lifejacket",
