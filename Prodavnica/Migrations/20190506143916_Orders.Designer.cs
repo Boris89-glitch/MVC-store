@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prodavnica.Models;
 
 namespace Prodavnica.Migrations
 {
     [DbContext(typeof(EFContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190506143916_Orders")]
+    partial class Orders
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,7 +46,12 @@ namespace Prodavnica.Migrations
                 {
                     b.Property<int>("OrderID")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.SequenceHiLo);
+
+                    b.Property<string>("Address1")
+                        .IsRequired();
+
+                    b.Property<string>("Address2");
 
                     b.Property<string>("City")
                         .IsRequired();
@@ -52,20 +59,10 @@ namespace Prodavnica.Migrations
                     b.Property<string>("Country")
                         .IsRequired();
 
-                    b.Property<bool>("GiftWrap");
-
-                    b.Property<string>("Line1")
-                        .IsRequired();
-
-                    b.Property<string>("Line2");
-
-                    b.Property<string>("Line3");
-
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<string>("State")
-                        .IsRequired();
+                    b.Property<bool>("Shipped");
 
                     b.Property<string>("Zip");
 

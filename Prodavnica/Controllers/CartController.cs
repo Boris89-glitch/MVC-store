@@ -9,11 +9,11 @@ namespace Prodavnica.Controllers
 {
     public class CartController : Controller
     {
-        private IBaza baza;
+        private IBaza repository;
         private Cart cart;
-        public CartController(IBaza bazica, Cart cartService)
+        public CartController(IBaza repo, Cart cartService)
         {
-            baza = bazica;
+            repository = repo;
             cart = cartService;
         }
         public ViewResult Index(string returnUrl)
@@ -26,16 +26,19 @@ namespace Prodavnica.Controllers
         }
         public RedirectToActionResult AddToCart(int productId, string returnUrl)
         {
-            Product product = baza.Products.FirstOrDefault(p => p.ProductID == productId);
+            Product product = repository.Products
+            .FirstOrDefault(p => p.ProductID == productId);
             if (product != null)
             {
                 cart.AddItem(product, 1);
             }
             return RedirectToAction("Index", new { returnUrl });
         }
-        public RedirectToActionResult RemoveFromCart(int productId,string returnUrl)
+        public RedirectToActionResult RemoveFromCart(int productId,
+        string returnUrl)
         {
-            Product product = baza.Products.FirstOrDefault(p => p.ProductID == productId);
+            Product product = repository.Products
+            .FirstOrDefault(p => p.ProductID == productId);
             if (product != null)
             {
                 cart.RemoveLine(product);

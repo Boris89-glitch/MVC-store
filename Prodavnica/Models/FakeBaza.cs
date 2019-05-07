@@ -13,5 +13,15 @@ namespace Prodavnica.Models
             new Product{Name = "nesto", Price = 115},
             new Product{Name = "nesto nesto", Price = 25}
         }.AsQueryable();
+
+        public Product DeleteProduct(int productID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SaveProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -10,7 +10,7 @@ using Prodavnica.Models;
 namespace Prodavnica.Migrations
 {
     [DbContext(typeof(EFContext))]
-    [Migration("20190310154556_ShippedOrders")]
+    [Migration("20190506143939_ShippedOrders")]
     partial class ShippedOrders
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,26 +48,21 @@ namespace Prodavnica.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Address1")
+                        .IsRequired();
+
+                    b.Property<string>("Address2");
+
                     b.Property<string>("City")
                         .IsRequired();
 
                     b.Property<string>("Country")
                         .IsRequired();
 
-                    b.Property<bool>("GiftWrap");
-
-                    b.Property<string>("Line1")
-                        .IsRequired();
-
-                    b.Property<string>("Line2");
-
-                    b.Property<string>("Line3");
-
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<string>("State")
-                        .IsRequired();
+                    b.Property<bool>("Shipped");
 
                     b.Property<string>("Zip");
 

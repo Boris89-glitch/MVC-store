@@ -9,13 +9,28 @@ namespace Prodavnica.Controllers
 {
     public class OrderController : Controller
     {
-        private IOrders repository;
+        private IOrderRepo repository;
         private Cart cart;
-        public OrderController(IOrders repoService, Cart cartService)
+        public OrderController(IOrderRepo repoService, Cart cartService)
         {
             repository = repoService;
             cart = cartService;
         }
+       
+        public ViewResult List() => View(repository.Orders.Where(o => !o.Shipped));
+
+        [HttpPost]
+        public IActionResult MarkShipped(int orderID)
+        {
+            Order order = repository.Orders.FirstOrDefault(o => o.OrderID == orderID);
+            if (order != null)
+            {
+                order.Shipped = true;
+                repository.SaveOrder(order);
+            }
+            return RedirectToAction(nameof(List));
+        }
+
         public ViewResult Checkout() => View(new Order());
 
         [HttpPost]
@@ -23,7 +38,7 @@ namespace Prodavnica.Controllers
         {
             if (cart.Lines.Count() == 0)
             {
-                ModelState.AddModelError("", "Sorry, your cart is empty!");
+                ModelState.AddModelError("", "Your cart is empty!");
             }
             if (ModelState.IsValid)
             {
